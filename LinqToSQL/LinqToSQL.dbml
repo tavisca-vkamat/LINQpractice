@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HotelReservationSystem" Class="LinqToSQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=VIVEKK\MSSQLSERVER2012;Initial Catalog=HotelReservationSystem;User ID=sa" SettingsObjectName="LinqToSQL.Properties.Settings" SettingsPropertyName="HotelReservationSystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CustomerData" Member="CustomerDatas">
+    <Type Name="CustomerData">
+      <Column Name="CustomerId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="CustomerData_BookingDetail" Member="BookingDetails" ThisKey="CustomerId" OtherKey="CustomerId" Type="BookingDetail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HotelData" Member="HotelDatas">
+    <Type Name="HotelData">
+      <Column Name="HotelId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HotelName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TotalRooms" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="HotelData_RoomsData" Member="RoomsDatas" ThisKey="HotelId" OtherKey="HotelId" Type="RoomsData" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RoomsData" Member="RoomsDatas">
+    <Type Name="RoomsData">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HotelId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="RoomType" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TotalRooms" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AvailableRooms" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="RoomsData_BookingDetail" Member="BookingDetails" ThisKey="Id" OtherKey="RoomId" Type="BookingDetail" />
+      <Association Name="HotelData_RoomsData" Member="HotelData" ThisKey="HotelId" OtherKey="HotelId" Type="HotelData" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BookingDetails" Member="BookingDetails">
+    <Type Name="BookingDetail">
+      <Column Name="BookingId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="RoomId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="CheckInDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CheckOutDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="CustomerData_BookingDetail" Member="CustomerData" ThisKey="CustomerId" OtherKey="CustomerId" Type="CustomerData" IsForeignKey="true" />
+      <Association Name="RoomsData_BookingDetail" Member="RoomsData" ThisKey="RoomId" OtherKey="Id" Type="RoomsData" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.spInsertCustomer" Method="spInsertCustomer">
+    <Parameter Name="FirstName" Parameter="firstName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="LastName" Parameter="lastName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="EmailId" Parameter="emailId" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PhoneNumber" Parameter="phoneNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="customerId" Type="System.Int64" DbType="BigInt" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

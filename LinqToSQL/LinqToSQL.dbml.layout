@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LinqToSQL">
+  <DataContextMoniker Name="/LinqToSQLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c06e6b68-348c-42e3-8c07-f875b65e53ff" absoluteBounds="2.75, 1.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LinqToSQLDataContext/CustomerData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7584e29-063e-4b51-9a3e-f7e941f11a32" absoluteBounds="2.7649999999999997, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c94e2eb-766a-4ff7-ae79-94e5b9238221" absoluteBounds="6.75, 1.125, 2, 1.9631982421875">
+      <DataClassMoniker Name="/LinqToSQLDataContext/HotelData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ceb75f2a-a57a-45ea-b69a-88a85f607ca9" absoluteBounds="6.7650000000000006, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9983a3b1-2336-40e8-84d1-dcca20d4a1e5" absoluteBounds="7, 4, 2, 1.9631982421875">
+      <DataClassMoniker Name="/LinqToSQLDataContext/RoomsData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="854cdc72-a124-4db8-9074-27fb87002688" absoluteBounds="7.015, 4.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.875 : 3.0881982421875); (7.875 : 4)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqToSQLDataContext/HotelData/HotelData_RoomsData" />
+      <nodes>
+        <classShapeMoniker Id="8c94e2eb-766a-4ff7-ae79-94e5b9238221" />
+        <classShapeMoniker Id="9983a3b1-2336-40e8-84d1-dcca20d4a1e5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7a0f082c-467f-4e10-a6fd-59628cc79e52" absoluteBounds="2.75, 4.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LinqToSQLDataContext/BookingDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="131d8a82-f135-4d6d-a6bc-ec95c353aaca" absoluteBounds="2.7649999999999997, 4.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.75 : 2.89589680989583); (3.75 : 4.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqToSQLDataContext/CustomerData/CustomerData_BookingDetail" />
+      <nodes>
+        <classShapeMoniker Id="c06e6b68-348c-42e3-8c07-f875b65e53ff" />
+        <classShapeMoniker Id="7a0f082c-467f-4e10-a6fd-59628cc79e52" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 5.01044840494792); (4.75 : 5.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqToSQLDataContext/RoomsData/RoomsData_BookingDetail" />
+      <nodes>
+        <classShapeMoniker Id="9983a3b1-2336-40e8-84d1-dcca20d4a1e5" />
+        <classShapeMoniker Id="7a0f082c-467f-4e10-a6fd-59628cc79e52" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,9 @@
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\ValidateEmployee\bin\Debug\ValidateEmployee.dll
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\ValidateEmployee\bin\Debug\ValidateEmployee.pdb
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\ValidateEmployee\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\ValidateEmployee\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\ValidateEmployee\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\ValidateEmployee\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\ValidateEmployee\obj\Debug\EmployeeOperations.csprojResolveAssemblyReference.cache
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\ValidateEmployee\obj\Debug\ValidateEmployee.dll
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\ValidateEmployee\obj\Debug\ValidateEmployee.pdb

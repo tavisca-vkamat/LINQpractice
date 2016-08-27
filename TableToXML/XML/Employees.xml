@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<Employees>
+  <Employee>
+    <Id>1</Id>
+    <DepartmentId>1</DepartmentId>
+    <FirstName>David</FirstName>
+    <LastName>Smith</LastName>
+    <Salary>10000.00</Salary>
+  </Employee>
+  <Employee>
+    <Id>3</Id>
+    <DepartmentId>1</DepartmentId>
+    <FirstName>Mark</FirstName>
+    <LastName>Drinkwater</LastName>
+    <Salary>30000.00</Salary>
+  </Employee>
+  <Employee>
+    <Id>4</Id>
+    <DepartmentId>2</DepartmentId>
+    <FirstName>Norah</FirstName>
+    <LastName>Miller</LastName>
+    <Salary>20000.00</Salary>
+  </Employee>
+  <Employee>
+    <Id>12</Id>
+    <DepartmentId>2</DepartmentId>
+    <FirstName>Cecil</FirstName>
+    <LastName>Walker</LastName>
+    <Salary>120000.00</Salary>
+  </Employee>
+</Employees>

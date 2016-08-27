@@ -1,0 +1,6 @@
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\TestCRUDLinq\bin\Debug\TestCRUDLinq.exe.config
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\TestCRUDLinq\bin\Debug\TestCRUDLinq.exe
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\TestCRUDLinq\bin\Debug\TestCRUDLinq.pdb
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\TestCRUDLinq\obj\Debug\TestCRUDLinq.csprojResolveAssemblyReference.cache
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\TestCRUDLinq\obj\Debug\TestCRUDLinq.exe
+c:\users\vkamat\documents\visual studio 2015\Projects\LinqToSQL\TestCRUDLinq\obj\Debug\TestCRUDLinq.pdb
